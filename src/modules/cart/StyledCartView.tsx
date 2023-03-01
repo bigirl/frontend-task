@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledCatalogView = styled.div`
+const StyledCartView = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,13 +8,13 @@ const StyledCatalogView = styled.div`
   max-width: 1920px;
   margin: 0 auto;
 
-  .CatalogView__header {
+  .CartView__header {
     display: flex;
     align-items: center;
     letter-spacing: 0.5px;
   }
 
-  .CatalogView__grid {
+  .CartView__grid {
     margin: 24px 0;
 
     &>div:first-child {
@@ -175,4 +175,4 @@ const StyledCatalogView = styled.div`
 
 `;
 
-export default StyledCatalogView;
+export default StyledCartView;

@@ -1,0 +1,23 @@
+a.cart {
+  margin: 12px 20px;
+  cursor: pointer;
+  max-height: 27px;
+  position: relative;
+}
+
+.count { 
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: -7px;
+  top: -17px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 17px;
+  text-align: center;
+  border-radius: 100px;
+  background: #00B588;
+  color: #FFFFFF;
+}

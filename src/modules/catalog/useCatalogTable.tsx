@@ -6,6 +6,8 @@ import { AddToCartIcon } from "../../tools/icons";
 
 import { CatalogProduct } from "../product/types";
 
+import USDollar from '../../tools/helpers/currencyConverter';
+
 interface Props {
   onAddItem: (item: CatalogProduct) => void;
 }
@@ -13,11 +15,6 @@ interface Props {
 function useCatalogTable({ onAddItem }: Props) {
   const columns: TableColumn<CatalogProduct>[] = useMemo(
     () => [
-      {
-        key: "id",
-        title: "ID",
-        renderCell: (item) => <a>{item.id}</a>,
-      },
       {
         key: "image",
         title: "Image",
@@ -30,6 +27,11 @@ function useCatalogTable({ onAddItem }: Props) {
         ),
       },
       {
+        key: "id",
+        title: "ID",
+        renderCell: (item) => <a>{item.id}</a>,
+      },
+      {
         key: "title",
         title: "Title",
         renderCell: (item) => <a>{item.title}</a>,
@@ -37,7 +39,7 @@ function useCatalogTable({ onAddItem }: Props) {
       {
         key: "price",
         title: "Price",
-        renderCell: (item) => <a>{item.price}</a>,
+        renderCell: (item) => <a>{USDollar.format(item.price)}</a>,
       },
       {
         key: "action",

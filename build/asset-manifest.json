@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d46fad02.css",
+    "main.js": "/static/js/main.70ac3940.js",
+    "static/media/logo-dropit-business.svg": "/static/media/logo-dropit-business.54570bf3deaf98b85d0d6890643d19bd.svg",
+    "index.html": "/index.html",
+    "main.d46fad02.css.map": "/static/css/main.d46fad02.css.map",
+    "main.70ac3940.js.map": "/static/js/main.70ac3940.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d46fad02.css",
+    "static/js/main.70ac3940.js"
+  ]
+}

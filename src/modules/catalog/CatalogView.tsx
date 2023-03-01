@@ -1,4 +1,5 @@
 import React from "react";
+import SearchTextbox from "../search";
 
 import { LoadingSpinner, Table } from "../../tools/ui_components";
 
@@ -11,7 +12,11 @@ const CatalogView = () => {
   return (
     <StyledCatalogView>
       <div className="CatalogView__header">
-        <div className="CatalogView__header_text">Catalog Page</div>
+        <h1>Catalog Page</h1>
+      </div>
+
+      <div className="CatalogView__search">
+        <SearchTextbox />
       </div>
 
       <div className="CatalogView__grid">
